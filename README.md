@@ -1,4 +1,4 @@
-# Build a loading button with Angular
+# Build a tabbed interface with Angular
 
 ## Description
 Using an angular controller and directives, build a tabbed interface. Clicking on a new tab should change the contents in the viewable area.
@@ -45,7 +45,7 @@ Modify your code so that the currently selected tab is highlighted - denoting wh
 
 ## Notes
 
-Hints: create two variables on your controller scope called $scope.buttonText and $scope.isLoading. Use ng-bind to bind your buttonText to the button and ng-disabled to controll whether or not the button is disabled. You can use $timeout to reset the button back to its regular state after 4 seconds.
+Hints: Use ng-hide or ng-show to to hide and show your content elements based on whether or not a scope property is equal to the appropriate page. For example: `ng-show="currentTab === 'red'"`, `ng-show="currentTab === 'green'"`, etc.
 
 ## Additional Resources
 
